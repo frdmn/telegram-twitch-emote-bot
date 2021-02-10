@@ -1,0 +1,15 @@
+{
+  "name": "telegram-twitch-emote-bot",
+  "version": "1.0.0",
+  "description": "Search and display Twitch emotes in Telegram chats",
+  "dependencies": {
+    "markdown-escape": "^1.1.0",
+    "node-fetch": "^2.6.1",
+    "telegraf": "^3.38.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jonas Friedmann <j@frd.mn>",
+  "license": "MIT"
+}
