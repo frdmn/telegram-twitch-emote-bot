@@ -1,0 +1,16 @@
+version: '2'
+services:
+  bttv:
+    build: .
+    restart: unless-stopped
+    container_name: telegram-bttv
+    command: node bttv.js
+    environment:
+      BOT_TOKEN: XXX
+  ffz:
+    build: .
+    restart: unless-stopped
+    container_name: telegram-ffz
+    command: node ffz.js
+    environment:
+      BOT_TOKEN: XXX
