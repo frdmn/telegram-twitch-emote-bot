@@ -1,5 +1,9 @@
 # telegram-twitch-emote-bot
 
+| ![](https://up.frd.mn/0w813SXftYH.gif) | ![](https://up.frd.mn/6Il3a7QD0Hv.gif) |
+|-----|-----|
+| FFZ ([`@TwitchFFZBot`](http://t.me/TwitchFFZBot)) | BTTV ([`@TwitchBTTVBot`](http://t.me/TwitchBTTVBot)) |
+
 Simple Telegram bot to access Twitch emotes (provided by BetterTwitchTV & FrankerFaceZ) that supports inline queries, e.g. `@TwitchBTTVBot dinkdonk` or `@TwitchFFZBot peepo`.
 
 No need to invite the bot into groups/channels!
@@ -13,10 +17,18 @@ No need to invite the bot into groups/channels!
     git clone https://github.com/frdmn/telegram-twitch-emote-bot
     ```
 
-3. Install the project using `make`:
+
+3. Copy and adjust sample `.env` file, make sure you've added your Telegram bot tokens:
 
     ```shell
-    make install
+    cp .env.sample .env
+    vi .env
+    ```
+
+4. Build Docker images and startup containers:
+
+    ```shell
+    docker-compose up -d
     ```
 
 ## Usage
@@ -51,9 +63,7 @@ Here's a short explanation how to use `telegram-twitch-emote-bot`:
 
 ## Requirements / Dependencies
 
-* This
-* And that
-* As well as this
+* Docker
 
 ## Version
 
