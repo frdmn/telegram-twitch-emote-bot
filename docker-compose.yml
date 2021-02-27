@@ -6,11 +6,11 @@ services:
     container_name: telegram-bttv
     command: node bttv.js
     environment:
-      BOT_TOKEN: XXX
+      BOT_TOKEN: ${TELEGRAM_TOKEN_BTTV}
   ffz:
     build: .
     restart: unless-stopped
     container_name: telegram-ffz
     command: node ffz.js
     environment:
-      BOT_TOKEN: XXX
+      BOT_TOKEN: ${TELEGRAM_TOKEN_FFZ}
