@@ -10,7 +10,7 @@ bot.help((ctx) => {
 })
 
 bot.on('inline_query', async ({ inlineQuery, answerInlineQuery }) => {
-  const apiUrl = `https://api.frankerfacez.com/v1/emoticons?sort=count-decs&q=${encodeURIComponent(inlineQuery.query)}`
+  const apiUrl = `https://api.frankerfacez.com/v1/emoticons?sort=count-decs&q=${inlineQuery.query}`
   const response = await fetch(apiUrl)
   const results  = await response.json()
 
