@@ -18,7 +18,7 @@ bot.on('inline_query', async ({ inlineQuery, answerInlineQuery }) => {
     const emotes = results.emoticons
       .map(({ id, name, urls, owner }) => ({
         type: 'photo',
-        id: id + 'sasdsssxxxvsss',
+        id: id,
         title: name,
         caption: name.replace(/\!/g, '\\!') + ' \\(_by ' +  escape(owner.display_name) + '_\\)' ,
         parse_mode: 'MarkdownV2',
