@@ -1,6 +1,6 @@
 # telegram-twitch-emote-bot
 
-| ![](https://up.frd.mn/0w813SXftYH.gif) | ![](https://up.frd.mn/6Il3a7QD0Hv.gif) |
+| ![](https://up.frd.mn/mlF0n2cGTFn.gif) | ![](https://up.frd.mn/138Nz1OCozD.gif) |
 |-----|-----|
 | FFZ ([`@TwitchFFZBot`](http://t.me/TwitchFFZBot)) | BTTV ([`@TwitchBTTVBot`](http://t.me/TwitchBTTVBot)) |
 
