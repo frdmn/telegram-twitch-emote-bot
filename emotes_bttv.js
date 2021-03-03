@@ -23,7 +23,7 @@ bot.on('inline_query', async ({ inlineQuery, answerInlineQuery }) => {
           type: replyType,
           id: result.id + result.imageType,
           title: result.code,
-          caption: result.code + ' \\(_by ' +  escape(result.user.displayName) + '_\\)' ,
+          caption: result.code.replace(/\!/g, '\\!') + ' \\(_by ' +  escape(result.user.displayName) + '_\\)' ,
           parse_mode: 'MarkdownV2',
           thumb_url: 'https://cdn.betterttv.net/emote/' + result.id + '/3x.' + result.imageType,
           [replyType + '_url']: 'https://cdn.betterttv.net/emote/' + result.id + '/3x.' + result.imageType,

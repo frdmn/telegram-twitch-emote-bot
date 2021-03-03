@@ -20,7 +20,7 @@ bot.on('inline_query', async ({ inlineQuery, answerInlineQuery }) => {
         type: 'photo',
         id: id + 'sasdsssxxxvsss',
         title: name,
-        caption: name.replace('!', '\\!') + ' \\(_by ' +  escape(owner.display_name) + '_\\)' ,
+        caption: name.replace(/\!/g, '\\!') + ' \\(_by ' +  escape(owner.display_name) + '_\\)' ,
         parse_mode: 'MarkdownV2',
         thumb_url: 'https:' + urls[Object.keys(urls).reverse()[0]],
         photo_url: 'https:' + urls[Object.keys(urls).reverse()[0]],
